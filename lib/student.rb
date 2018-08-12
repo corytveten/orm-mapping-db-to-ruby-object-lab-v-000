@@ -62,7 +62,7 @@ class Student
     end
   end
 
-  def self.count_all_students_in_grade_9
+  def self.first_X_students_in_grade_10
     sql = <<-SQL
       SELECT name
       FROM students
