@@ -66,7 +66,8 @@ class Student
     sql = <<-SQL
       SELECT name
       FROM students
-      WHERE grade = 9
+      WHERE grade = 10
+      LIMIT 1
     SQL
 
     DB[:conn].execute(sql).map do |row|
