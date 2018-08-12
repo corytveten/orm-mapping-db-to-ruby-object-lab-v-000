@@ -70,7 +70,8 @@ class Student
     SQL
 
     DB[:conn].execute(sql).map do |row|
-      self.new_from_db(row)[0..num]
+      array = self.new_from_db(row)
+      array[0..num]
     end
   end
 
